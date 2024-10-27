@@ -1,0 +1,30 @@
+{
+  "name": "nft-marketplace-api",
+  "version": "1.0.0",
+  "description": "global marketplace api useful for nft",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawalstacks/nft-market-api.git"
+  },
+  "keywords": [
+    "marketplace",
+    "Ecommerce",
+    "nft"
+  ],
+  "author": "kazeem lawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawalstacks/nft-market-api/issues"
+  },
+  "homepage": "https://github.com/lawalstacks/nft-market-api#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
