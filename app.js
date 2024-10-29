@@ -1,13 +1,14 @@
 const express = require('express');
+const fs = require('fs');
+const nftsRoute = require('./routes/nftsRoute');
+const usersRoute = require('./routes/usersRoute');
 
-const port = 3000;
 
 const app = express();
 app.use(express.json());
-app.get('/',(req,res)=>{
-  res.status(200).json({message:"welcome to global api"});
-});
 
-app.listen(port, ()=>{
-  console.log(`port running on ${port}`);
-});
+app.use('/api/v1/nfts',nftsRoute);
+app.use('/api/v1/users',usersRoute);
+
+
+ module.exports = app;
